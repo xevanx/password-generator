@@ -11,34 +11,28 @@
             <div class = "genBox">
                 Generate a Password
                 <p class = "bar1"></p>
-                <div class = "genPass">
+                <div id = "genPass">
                     Your Secure Password
+                    <h1 id = "newPass">
+                    </h1>
                 </div>
                 <p class = "bar2"></p>
-                <div class = "genButton">
-                    Generate Password
+                <div>
+                    <button id = "genButton">Generate Password</button>
                 </div>
-                <div class = "copyButton">
-                    Copy to Clipboard
+                <div>
+                    <button id = "copyButton">Copy to Clipboard</button>
                 </div>
             </div>
-            <label class = "switch" id = "numb">
-                <input type = "checkbox">
-                <span class = "slider">Numeric Characters</span>
-            </label>
-            <label class = "switch" id = "upper">
-                <input type = "checkbox">
-                <span class = "slider">Upper Case</span>
-            </label>
-            <label class = "switch" id = "lower">
-                <input type = "checkbox">
-                <span class = "slider">Lower Case</span>
-            </label>
-            <label class = "switch" id = "spec">
-                <input type = "checkbox">
-                <span class = "slider">Special Characters</span>
-            </label>
+            <input type = "checkbox" id = "numb">
+            <label for = "type1" class = "input">Numbers</label>
+            <input type = "checkbox" id = "upper">
+            <label for = "type2" class = "input">Upper Case</label>
+            <input type = "checkbox" id = "lower" value = 'TRUE'>
+            <label for = "type3" class = "input">Lower Case</label>
+            <input type = "checkbox" id = "special">
+            <label for = "type4" class = "input">Special Characters</label>
         </div>
-        <script href = "script.js"></script>
+        <script src = "script.js"></script>
     </body>
 </html>
